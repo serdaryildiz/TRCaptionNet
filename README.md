@@ -10,7 +10,7 @@
     <br />
     <br />
     <a href='https://journals.tubitak.gov.tr/elektrik'><img src='https://img.shields.io/badge/Paper-TUBITAK-red'></a>
-    <a href='https://huggingface.co/spaces/'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a> 
+    <a href='https://huggingface.co/spaces/serdaryildiz/TRCaptionNet'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a> 
     <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
 </p>
 
