@@ -39,7 +39,7 @@ This project was developed on `torch 2.0.0 CUDA 11.8` and `Python 3.10`.
 
 For the COCO dataset, please visit the [TurkishCaptionSet-COCO](https://github.com/serdaryildiz/TurkishCaptionSet-COCO) repository.
 
-For the Flickr30k dataset : [Flicker30k-Turkish](https://drive.google.com/)
+For the Flickr30k dataset : [Flickr30k-Turkish](https://drive.google.com/)
 
 ## Checkpoint
 
