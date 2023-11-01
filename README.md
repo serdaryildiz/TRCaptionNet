@@ -9,7 +9,7 @@
 <p align="center">
     <br />
     <br />
-    <a href='https://journals.tubitak.gov.tr/elektrik'><img src='https://img.shields.io/badge/Paper-TUBITAK-red'></a>
+    <a href='https://doi.org/10.55730/1300-0632.4035'><img src='https://img.shields.io/badge/Paper-TUBITAK-red'></a>
     <a href='https://huggingface.co/spaces/serdaryildiz/TRCaptionNet'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a> 
     <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
 </p>
@@ -21,7 +21,8 @@
 
 
 ## Abstract
-    
+
+Image captioning is known as a fundamental computer vision task aiming to figure out and describe what is happening in an image or image region. Through an image captioning process, it is ensured to describe and define the actions and the relations of the objects within the images. In this manner, the contents of the images can be understood and interpreted automatically by visual computing systems. In this paper, we proposed the TRCaptionNet a novel deep learning-based Turkish image captioning (TIC) model for the automatic generation of Turkish captions. The model we propose essentially consists of a basic image encoder, a feature projection module based on vision transformers, and a text decoder. In the first stage, the system encodes the input images via the CLIP (contrastive language–image pretraining) image encoder. The CLIP image features are then passed through a vision transformer and the final image features to be linked with the textual features are obtained. In the last stage, a deep text decoder exploiting a BERT (bidirectional encoder representations from transformers) based model is used to generate the image cations. Furthermore, unlike the related works, a natural language-based linguistic model called NLLB (No Language Left Behind) was employed to produce Turkish captions from the original English captions. Extensive performance evaluation studies were carried out and widely known image captioning quantification metrics such as BLEU, METEOR, ROUGE-L, and CIDEr were measured for the proposed model. Within the scope of the experiments, quite successful results were observed on MS COCO and Flickr30K datasets, two known and prominent datasets in this field. As a result of the comparative performance analysis by taking the existing reports in the current literature on TIC into consideration, it was witnessed that the proposed model has superior performance and outperforms the related works on TIC so far.
 
 
 ## Installation
@@ -78,7 +79,8 @@ to run demo for images:
 
 ## TODO
 
-- ??  
+- translated Flickr30k dataset will be uploaded!
+- train code will be added!  
 
 
 
@@ -87,15 +89,16 @@ to run demo for images:
 If you find our work helpful, please cite the following paper:
 
 ```
-@ARTICLE{,
-author={Serdar Yıldız and Abbas Memiş and Songül Varlı},
-journal={},
-title={},
-year={},
-volume={},
-number={},
-pages={},
-doi={}
+@article{yildiz2023trcaptionnet,
+  author    = {Serdar Yildiz and Abbas Memis and Songül Varli},
+  title     = {TRCaptionNet: A novel and accurate deep Turkish image captioning model with vision transformer based image encoders and deep linguistic text decoders},
+  journal   = {Turkish Journal of Electrical Engineering and Computer Sciences},
+  volume    = {31},
+  number    = {6},
+  year      = {2023},
+  pages     = {11},
+  doi       = {10.55730/1300-0632.4035},
+  url       = {https://doi.org/10.55730/1300-0632.4035},
 }
 ```
 
