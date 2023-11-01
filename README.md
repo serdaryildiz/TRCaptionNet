@@ -24,6 +24,7 @@
 
 Image captioning is known as a fundamental computer vision task aiming to figure out and describe what is happening in an image or image region. Through an image captioning process, it is ensured to describe and define the actions and the relations of the objects within the images. In this manner, the contents of the images can be understood and interpreted automatically by visual computing systems. In this paper, we proposed the TRCaptionNet a novel deep learning-based Turkish image captioning (TIC) model for the automatic generation of Turkish captions. The model we propose essentially consists of a basic image encoder, a feature projection module based on vision transformers, and a text decoder. In the first stage, the system encodes the input images via the CLIP (contrastive language–image pretraining) image encoder. The CLIP image features are then passed through a vision transformer and the final image features to be linked with the textual features are obtained. In the last stage, a deep text decoder exploiting a BERT (bidirectional encoder representations from transformers) based model is used to generate the image cations. Furthermore, unlike the related works, a natural language-based linguistic model called NLLB (No Language Left Behind) was employed to produce Turkish captions from the original English captions. Extensive performance evaluation studies were carried out and widely known image captioning quantification metrics such as BLEU, METEOR, ROUGE-L, and CIDEr were measured for the proposed model. Within the scope of the experiments, quite successful results were observed on MS COCO and Flickr30K datasets, two known and prominent datasets in this field. As a result of the comparative performance analysis by taking the existing reports in the current literature on TIC into consideration, it was witnessed that the proposed model has superior performance and outperforms the related works on TIC so far.
 
+![fig_model.png](fig%2Ffig_model.png)
 
 ## Installation
 
@@ -40,7 +41,7 @@ This project was developed on `torch 2.0.0 CUDA 11.8` and `Python 3.10`.
 
 For the COCO dataset, please visit the [TurkishCaptionSet-COCO](https://github.com/serdaryildiz/TurkishCaptionSet-COCO) repository.
 
-For the Flickr30k dataset : [Flickr30k-Turkish](https://drive.google.com/)
+For the Flickr30k dataset : [Flickr30k-Turkish](https://drive.google.com/drive/folders/1Exi-iL7I7JWevnncQU77uRnu851ow4br?usp=sharing)
 
 ## Checkpoint
 
@@ -79,7 +80,6 @@ to run demo for images:
 
 ## TODO
 
-- translated Flickr30k dataset will be uploaded!
 - train code will be added!  
 
 
