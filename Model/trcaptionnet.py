@@ -93,6 +93,31 @@ class TRCaptionNet(nn.Module):
         captions = [self.tokenizer.decode(output, skip_special_tokens=True) for output in outputs]
         return captions
 
+    def forward(self, images, captions):
+        with torch.no_grad():
+            image_embeds = self.vision_encoder(images).detach()
+
+        image_embeds = self.proj(image_embeds)
+
+        image_atts = torch.ones(image_embeds.size()[:-1], dtype=torch.long).to(images.device)
+
+        captions = self.tokenizer(captions, padding='longest', truncation=True, max_length=self.max_length,
+                                  return_tensors="pt").to(images.device)
+
+        captions.input_ids[:, 0] = 2
+        decoder_targets = captions.input_ids.masked_fill(captions.input_ids == self.tokenizer.pad_token_id, -100)
+        decoder_targets[:, 0] = -100
+
+        decoder_output = self.language_decoder(input_ids=captions.input_ids,
+                                               attention_mask=captions.attention_mask,
+                                               encoder_hidden_states=image_embeds,
+                                               encoder_attention_mask=image_atts,
+                                               labels=decoder_targets,
+                                               return_dict=True,
+                                               )
+
+        loss_lm = decoder_output.loss
+        return loss_lm
 
 def test():
     model = TRCaptionNet({

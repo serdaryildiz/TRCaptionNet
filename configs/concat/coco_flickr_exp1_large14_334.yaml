@@ -1,0 +1,44 @@
+
+seed: 42
+gpu: 0
+save_dir: coco_flickr_experiments
+save_name: coco_flickr_exp1_large14_334
+overwrite: ~
+
+# model
+model:
+  clip: ViT-L/14@336px
+  bert: bert.json
+  max_length: 35
+  proj: True
+  proj_num_head: 16
+
+# optimizer
+lr: 5e-4
+lr_proj: 5e-4
+betas: [0.9, 0.99]
+weight_decay: 0.01
+
+num_workers: 8
+batch_size: 64
+max_iter: 50000
+warm_up_iter: 10000
+num_eval_iter: 8000
+target_metric: 'Bleu_4' # Bleu_1 Bleu_2 Bleu_3 Bleu_4 METEOR ROUGE_L CIDEr SPICE
+
+# dataset
+train_dataset_name:
+  - coco-karphaty
+  - flickr30k
+train_dataset_root:
+  - "Data/coco/"
+  - "Data/flickr/"
+train_json_path:
+  - "Data/coco/annotations/coco_karpathy_train_tr.json"
+  - "Data/flickr/flickr30k_train_tr.json"
+
+
+test_dataset_name: coco-karphaty
+test_dataset_root: "Data/coco/"
+val_json_path: "Data/coco/annotations/coco_karpathy_val_gt_tr.json"
+
