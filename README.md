@@ -99,7 +99,7 @@ to run demo for images:
 
 ## Citation
 
-If you find our work helpful, please cite the following paper:
+If you find our work helpful, please cite the following papers:
 
 ```
 @article{yildiz2023trcaptionnet,
@@ -113,6 +113,18 @@ If you find our work helpful, please cite the following paper:
   doi       = {10.55730/1300-0632.4035},
   url       = {https://doi.org/10.55730/1300-0632.4035},
 }
+```
+```
+@INPROCEEDINGS{10600738,
+  author={Yıldız, Serdar and Memiş, Abbas and Varlı, Songül},
+  booktitle={2024 32nd Signal Processing and Communications Applications Conference (SIU)}, 
+  title={Turkish Image Captioning with Vision Transformer Based Encoders and Text Decoders}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-4},
+  keywords={Computer vision;Visualization;Signal processing;Benchmark testing;Transformers;Decoding;Meteors;image captioning;Turkish image captioning;image understanding;vision transformers;text decoders},
+  doi={10.1109/SIU61531.2024.10600738}}
 ```
 
 ### Thanks to awesome works
