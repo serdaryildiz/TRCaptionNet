@@ -76,11 +76,24 @@ For the Flickr30k dataset : [Flickr30k-Turkish](https://drive.google.com/drive/f
 to run demo for images:
 
     python demo.py --model-ckpt ./checkpoints/TRCaptionNet_L14_berturk.pth --input-dir ./images/ --device cuda:0
-    
 
-## TODO
+## Train
 
-- train code will be added!  
+    python train.py --config $YOUR_CONFIG_PATH$
+
+## Test
+
+    python eval.py
+
+
+    --config  : config path to just create model
+    --device  : model device
+    --weights  : model checkpoint çpth path
+    --test-json  : dataset test .json file path
+    --test-data  : test dataset input image dir path
+    --dataset  : dataset name [coco-karphaty, flickr30k, tasviret]
+    --batch-size  : batch size
+    --num-worker  : number of worker for dataloader
 
 
 
