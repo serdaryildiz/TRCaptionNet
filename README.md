@@ -9,11 +9,15 @@
 <p align="center">
     <br />
     <br />
+    <a href='https://huggingface.co/spaces/serdaryildiz/TRCaptionNet'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-COCO%20Spaces-blue'></a> 
+    <a href='https://huggingface.co/spaces/serdaryildiz/TRCaptionNet-TasvirEt'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Tasviret%20Spaces-blue'></a> 
+</p>
+<p align="center">
+    <br />
+    <br />
     <a href='https://doi.org/10.55730/1300-0632.4035'><img src='https://img.shields.io/badge/Paper-TUBITAK-red'></a>
-    <a href='https://huggingface.co/spaces/serdaryildiz/TRCaptionNet'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a> 
     <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
 </p>
-
 
    
 
